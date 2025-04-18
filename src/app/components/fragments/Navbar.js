@@ -61,7 +61,12 @@ const Navbar = () => {
               </button>
             </div>
             <ul className="mt-4 space-y-4 font-medium text-gray-900">
-              <li className="bg-gray-100 p-2 rounded">Our Services</li>
+              <li
+                className="bg-gray-100 p-2 rounded cursor-pointer font-medium font-generalSans hover:underline"
+                onClick={() => scrollToSection("services")}
+              >
+                Our Services
+              </li>
               <li className="list-disc ml-4 text-gray-900 underline font-medium font-generalSans ">
                 <Link href="/service/web-main">Website Maintenance</Link>
               </li>
@@ -75,19 +80,19 @@ const Navbar = () => {
                 <Link href="/service/ai-solution">3rd Party AI Solution</Link>
               </li>
               <li
-                className="bg-gray-100 p-2 rounded cursor-pointer"
+                className="bg-gray-100 p-2 rounded cursor-pointer font-medium font-generalSans hover:underline"
                 onClick={() => scrollToSection("aboutUs")}
               >
                 About Us
               </li>
               <li
-                className="bg-gray-100 p-2 rounded cursor-pointer"
+                className="bg-gray-100 p-2 rounded cursor-pointer font-medium font-generalSans hover:underline"
                 onClick={() => scrollToSection("portfolio")}
               >
                 Portfolio
               </li>
               <li
-                className="bg-gray-100 p-2 rounded cursor-pointer"
+                className="bg-gray-100 p-2 rounded cursor-pointer font-medium font-generalSans hover:underline"
                 onClick={() => scrollToSection("contact")}
               >
                 Contact Us
