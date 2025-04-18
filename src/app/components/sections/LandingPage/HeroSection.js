@@ -1,5 +1,5 @@
 import HeroImage from "../../fragments/HeroImage";
-import ButtonCustom from "../../elements/buttonCustom";
+import ButtonCustom from "../../elements/ButtonCustom";
 
 const HeroSection = () => {
   return (
