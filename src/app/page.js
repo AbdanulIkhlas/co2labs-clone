@@ -12,7 +12,7 @@ export default function Home() {
       <div id="strategic">
         <StrategicSection />
       </div>
-      <div id="">
+      <div id="aboutUs" className="scroll-mt-24">
         <AboutUs />
       </div>
       <div id="portfolio">
@@ -21,4 +21,3 @@ export default function Home() {
     </div>
   );
 }
-
