@@ -9,9 +9,16 @@ export default function Home() {
     <div className="mt-0">
       <HeroSection />
       <ServicesSection />
-      <StrategicSection />
-      <AboutUs />
-      <Portfolio />
+      <div id="strategic">
+        <StrategicSection />
+      </div>
+      <div id="">
+        <AboutUs />
+      </div>
+      <div id="portfolio">
+        <Portfolio />
+      </div>
     </div>
   );
 }
+

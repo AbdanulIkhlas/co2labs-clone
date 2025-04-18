@@ -30,7 +30,7 @@ const AboutUs = () => {
           />
         </div>
       </div>
-      <div>
+      <div id="about">
         <h1 className="font-orbitron font-bold text-5xl text-left mt-42 px-10">
           Our Team
         </h1>

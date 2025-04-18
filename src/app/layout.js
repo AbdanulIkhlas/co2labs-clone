@@ -3,6 +3,7 @@ import { Orbitron } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/fragments/Navbar";
+import Footer from "./components/fragments/Footer";
 
 
 export const generalSansFont = localFont({
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
