@@ -7,9 +7,7 @@ const CardService = ({ srcIcon, title, description, link }) => {
       <div className="bg-gray-100 rounded-full w-20 h-20 flex items-center justify-center mb-4">
         <Image src={srcIcon} width={28} height={28} alt="Icon" />
       </div>
-      <h1 className="font-generalSans text-black font-semibold text-xl mb-2">
-        {title}
-      </h1>
+      <h1 className="font-generalSans text-black font-semibold text-xl mb-2">{title}</h1>
       <p className="font-generalSans mt-4 text-base font-normal text-black mb-6">
         {description}
       </p>
