@@ -2,6 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Orbitron } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "./components/fragments/Navbar";
+
 
 export const generalSansFont = localFont({
   src: "../app/fonts/GeneralSans-medium.woff2",
@@ -34,7 +36,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${generalSansFont.variable} ${orbitron.variable} antialiased`}
       >
-        <div className="border border-black font-orbitron">ini navbar ye</div>
+        <Navbar />
         {children}
       </body>
     </html>

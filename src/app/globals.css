@@ -12,6 +12,7 @@
   --font-mono: var(--font-geist-mono);
   --font-orbitron: var(--font-orbitron);
   --font-generalSans: var(--font-generalSans);
+  --color-main: #f9f8f6;
 }
 
 @media (prefers-color-scheme: dark) {
