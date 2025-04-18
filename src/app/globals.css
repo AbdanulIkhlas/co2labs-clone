@@ -13,6 +13,7 @@
   --font-orbitron: var(--font-orbitron);
   --font-generalSans: var(--font-generalSans);
   --color-main: #f9f8f6;
+  --color-secondary: #153147;
 }
 
 @media (prefers-color-scheme: dark) {
