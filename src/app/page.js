@@ -3,12 +3,15 @@ import ServicesSection from "./components/sections/LandingPage/ServicesSection";
 import StrategicSection from "./components/sections/LandingPage/StrategicSection";
 import AboutUs from "./components/sections/LandingPage/AboutUsSection";
 import Portfolio from "./components/sections/LandingPage/PortfolioSection";
+import ContactUsSection from "./components/sections/LandingPage/ContactUsSection";
 
 export default function Home() {
   return (
     <div className="mt-0">
       <HeroSection />
-      <ServicesSection />
+      <div class="services">
+        <ServicesSection />
+      </div>
       <div id="strategic">
         <StrategicSection />
       </div>
@@ -17,6 +20,9 @@ export default function Home() {
       </div>
       <div id="portfolio">
         <Portfolio />
+      </div>
+      <div id="contact" className="scroll-mt-20">
+        <ContactUsSection />
       </div>
     </div>
   );
