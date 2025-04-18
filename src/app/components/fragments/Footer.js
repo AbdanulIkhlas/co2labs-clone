@@ -113,7 +113,7 @@ const Footer = () => {
       <div className="mt-10 flex font-generalSans font-medium text-base flex-col md:flex-row justify-between items-start text-[#888888]">
         <div className="space-x-10 mb-2 md:mb-0">
           <Link href="/faq">FAQ</Link>
-          <Link href="/terms">Terms & Policy</Link>
+          <Link href="/termspolicy">Terms & Policy</Link>
         </div>
         <div className="mt-4">©2024 CO2 Labs. All Right Reserved.</div>
       </div>
