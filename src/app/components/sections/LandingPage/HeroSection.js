@@ -2,8 +2,8 @@ import HeroImage from "../../fragments/HeroImage";
 
 const HeroSection = () => {
   return (
-    <section className="border border-black -mt-10 pb-20">
-      <div className="h-70">
+    <section className="border border-black -mt-5 pb-20">
+      <div className="h-68">
         <HeroImage srcHeroImg="/img/heroimg-landingpage.png" />
       </div>
       <div className="px-10">
@@ -11,7 +11,7 @@ const HeroSection = () => {
         <h2 className="bg-secondary text-main font-orbitron font-bold mt-3 text-3xl w-max px-5">
           Creativity
         </h2>
-        <p className="font-generalSans mt-3 text-lg">
+        <p className="font-generalSans mt-3 text-xl">
           Harnessing the power of our Coding Collective to build solutions for
           your business needs.
         </p>
