@@ -1,4 +1,5 @@
 import HeroImage from "../../fragments/HeroImage";
+import ButtonCustom from "../../elements/buttonCustom";
 
 const HeroSection = () => {
   return (
@@ -16,10 +17,7 @@ const HeroSection = () => {
           your business needs.
         </p>
         <a href="#">
-          <button className="font-generalSans bg-secondary  text-main rounded-md mt-6 text-md w-max px-5 py-2
-          hover:scale-110 hover:shadow-md hover:shadow-secondary transition-all ">
-            Get a free consult
-          </button>
+          <ButtonCustom>Get a free consult</ButtonCustom>
         </a>
       </div>
     </section>
