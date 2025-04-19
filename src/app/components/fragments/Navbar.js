@@ -10,6 +10,7 @@ import ButtonCustom from "../elements/ButtonCustom";
 const Navbar = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false); // ➕ shadow state
   const sidebarRef = useRef(null);
 
   const router = useRouter();
@@ -33,6 +34,16 @@ const Navbar = () => {
 
     return () => document.removeEventListener("mousedown", handleOutsideClick);
   }, [isSidebarOpen]);
+
+  // ➕ scroll listener for shadow
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Scroll jika sudah di halaman "/" dan ada scrollToId
   useEffect(() => {
@@ -58,7 +69,11 @@ const Navbar = () => {
   };
 
   return (
-    <div className="sticky top-0 z-50 bg-main py-2 px-4 md:px-10 lg:px-30">
+    <div
+      className={`sticky top-0 z-50 bg-main py-2 px-4 md:px-10 lg:px-30 transition-shadow duration-300 ${
+        isScrolled ? "shadow-md" : ""
+      }`}
+    >
       {/* Mobile Navbar */}
       <div className="flex justify-between items-center lg:hidden">
         <Link href="/">
@@ -70,7 +85,7 @@ const Navbar = () => {
             width={26}
             height={26}
             alt="menu"
-            className="md:w-[26px]"
+            className="md:w-[26px] cursor-pointer"
           />
         </button>
       </div>
