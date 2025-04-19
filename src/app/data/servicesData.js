@@ -28,7 +28,7 @@ const servicesData = [
     title: "3rd Party AI Solution",
     srcIcon: "/svg/ai-solution.svg",
     description:
-      "Boost your online visibility and generate leads with our expert digital marketing services. From social media..",
+      "Leverage our expertise to find the best third-party services for your business. From hosting to plugins, we provid..",
     link: "/service/ai-solution",
   },
 ];
