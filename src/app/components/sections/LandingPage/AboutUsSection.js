@@ -35,11 +35,11 @@ const AboutUs = () => {
         </div>
       </div>
       <div id="about">
-        <h1 className="font-orbitron font-bold text-5xl text-left mt-42 px-10">
+        <h1 className="font-orbitron font-bold text-5xl text-left mt-42 px-10 lg:ps-28">
           Our Team
         </h1>
-        <div className="py-12 mt-8 bg-main px-4">
-          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="py-12 mt-8 bg-main px-4 md:px-30 lg:mt-27">
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-5">
             {teamsData.map((team) => (
               <TeamCard key={team.id} {...team} />
             ))}
