@@ -14,6 +14,7 @@
   --font-generalSans: var(--font-generalSans);
   --color-main: #f9f8f6;
   --color-secondary: #153147;
+  --breakpoint-2xl: 1440px;
 }
 
 @media (prefers-color-scheme: dark) {
