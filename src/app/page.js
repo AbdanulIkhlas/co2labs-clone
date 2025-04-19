@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="mt-0">
       <HeroSection />
-      <div class="services">
+      <div id="services">
         <ServicesSection />
       </div>
       <div id="strategic">

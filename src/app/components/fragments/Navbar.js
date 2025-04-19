@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
     <div className="sticky top-0 left-0 right-0 z-50 bg-main py-2 px-4 md:px-10">
       {/* Navbar Mobile */}
-      <div className="flex justify-between items-center md:hidden">
+      <div className="flex justify-between items-center lg:hidden">
         <Link href="/">
           <Image src="/img/logo.png" width={60} height={60} alt="logo" />
         </Link>
@@ -112,7 +112,7 @@ const Navbar = () => {
       </AnimatePresence>
 
       {/* Navbar Desktop */}
-      <div className="hidden md:flex justify-between items-center">
+      <div className="hidden lg:flex justify-between items-center">
         <Link href="/">
           <Image src="/img/logo.png" width={60} height={60} alt="logo" />
         </Link>
