@@ -1,5 +1,6 @@
 import ServicesHeroSection from "@/app/components/sections/ServicesPage/ServicesHeroSection";
 import SecondInformationSection from "@/app/components/sections/ServicesPage/SecondInformationSection";
+import HereForYouSection from "@/app/components/sections/ServicesPage/HereForYouSection";
 
 export default function Page() {
   return (
@@ -15,6 +16,11 @@ export default function Page() {
         urlImage="/img/web-main-image-1.png"
         information="Your website is a vital part of your business, and keeping it in top shape is essential. CO2 Labs offers reliable website maintenance solutions to ensure your site remains secure, up-to-date, and performing at its best."
         classnameImage={`md:w-70`}
+      />
+      <HereForYouSection
+        urlImage="/img/web-main-image-2.png"
+        Information="Partner with CO2 Labs for reliable website maintenance and enjoy peace of mind knowing your site is in expert hands. Contact us today to learn more about our services."
+        textButton="Get a Free Quote"
       />
     </div>
   );
