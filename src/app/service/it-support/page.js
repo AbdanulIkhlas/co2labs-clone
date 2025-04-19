@@ -14,6 +14,7 @@ export default function Page() {
       <SecondInformationSection
         urlImage="/img/it-support-image-1.png"
         information="At CO2 Labs, we understand that effective IT support is crucial for your business success. Our comprehensive IT support solutions are tailored to meet the unique needs of your organization, providing you with peace of mind."
+        classnameImage={`md:w-40`}
       />
     </div>
   );

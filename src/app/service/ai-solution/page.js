@@ -14,6 +14,7 @@ export default function Page() {
       <SecondInformationSection
         urlImage="/img/ai-solution-image-1.png"
         information="CO2 Labs helps you harness the power of third-party AI tools to enhance your business operations and drive innovation. Our team is skilled in integrating and customizing AI solutions to meet your specific needs."
+        classnameImage="w-20"
       />
     </div>
   );

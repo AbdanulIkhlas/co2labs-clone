@@ -14,6 +14,7 @@ export default function Page() {
       <SecondInformationSection
         urlImage="/img/web-dev-image-1.png"
         information="CO2 Labs provides innovative website and app development solutions tailored to help your business thrive in the digital age. Our experienced team leverages the latest technologies to create dynamic and engaging digital experiences."
+        classnameImage={`md:w-70`}
       />
     </div>
   );

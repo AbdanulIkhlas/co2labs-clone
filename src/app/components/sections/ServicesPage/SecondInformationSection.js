@@ -1,7 +1,7 @@
 import Image from "next/image";
 import AnimateOnScroll from "../../fragments/AnimatedOnScroll";
 
-const SecondInformationSection = ({ urlImage, information }) => {
+const SecondInformationSection = ({ urlImage, information, classnameImage, classnameInformation }) => {
   return (
     <section className="bg-secondary w-full px-10 py-16 text-white pb-20 lg:py-120 lg:px-26 xl:px-27 xl:py-44 ">
       <div className="relative h-22">
@@ -27,22 +27,22 @@ const SecondInformationSection = ({ urlImage, information }) => {
       xl:mt-2"
       >
         <div
-          className="bg-gradient-to-b mt-14 from-[#ffffff37] to-white/0 rounded-lg flex justify-center items-center w-full h-40
-          md:h-70 md:w-120 md:mx-auto lg:w-[50%] lg:mt-10 lg:h-72 xl:w-[40%] xl:mx-0 "
+          className={`bg-gradient-to-b mt-14 from-[#ffffff37] to-white/0 rounded-lg flex justify-center items-center w-full h-40
+          md:h-70 md:w-120 md:mx-auto lg:w-[50%] lg:mt-10 lg:h-72 xl:w-[40%] xl:mx-0 `}
         >
           <AnimateOnScroll direction="up" delay={0.6}>
             <Image
               src={urlImage}
               alt="icon image"
-              width={150}
-              height={150}
-              className="md:w-70"
+              width={100}
+              height={100}
+              className={`md:w-30 ${classnameImage}`}
             />
           </AnimateOnScroll>
         </div>
         <div
-          className="font-generalSans text-xl mt-10 text-center md:mt-3 lg:w-[49%] lg:text-[23px] lg:text-right lg:pt-6
-          xl:w-[48%] xl:text-xl "
+          className={`font-generalSans text-xl mt-10 text-center md:mt-3 lg:w-[49%] lg:text-[23px] lg:text-right lg:pt-6
+          xl:w-[48%] xl:text-xl ${classnameInformation}`}
         >
           <AnimateOnScroll direction="up" delay={0.7}>
             {information}

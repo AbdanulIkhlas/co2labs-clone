@@ -14,6 +14,7 @@ export default function Page() {
       <SecondInformationSection
         urlImage="/img/web-main-image-1.png"
         information="Your website is a vital part of your business, and keeping it in top shape is essential. CO2 Labs offers reliable website maintenance solutions to ensure your site remains secure, up-to-date, and performing at its best."
+        classnameImage={`md:w-70`}
       />
     </div>
   );
