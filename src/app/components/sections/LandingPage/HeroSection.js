@@ -18,7 +18,7 @@ const HeroSection = () => {
           </h2>
         </AnimateOnScroll>
         <AnimateOnScroll direction="left" delay={0.9}>
-          <p className="font-generalSans mt-3 text-xl md:mt-5">
+          <p className="font-generalSans mt-3 text-xl md:mt-5 mb-6">
             Harnessing the power of our Coding Collective to build solutions for
             your business needs.
           </p>
