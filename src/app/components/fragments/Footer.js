@@ -1,12 +1,20 @@
 "use client";
 import Link from "next/link";
-import { useRef } from "react";
+import { usePathname, useRouter } from "next/navigation";
 
 const Footer = () => {
+  const router = useRouter();
+  const pathname = usePathname();
+
   const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+    if (pathname === "/") {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      localStorage.setItem("scrollToId", id);
+      router.push("/");
     }
   };
 
@@ -17,16 +25,16 @@ const Footer = () => {
     >
       <div className="lg:flex lg:justify-start lg:gap-10 xl:justify-between xl:gap-50">
         {/* Newsletter */}
-        <div className="mb-10 lg:flex lg:flex-col lg:justify-between xl:w-[33%]  ">
+        <div className="mb-10 lg:flex lg:flex-col lg:justify-between xl:w-[33%]">
           <h1 className="font-extrabold text-[32px] font-generalSans pe-8">
             Let’s Grow With CO2 Labs
           </h1>
           <div className="lg:mt-76 xl:mt-0 xl:pe-8">
-            <h3 className="font-semibold text-[20px] font-generalSans mt-2 pe-8 ">
+            <h3 className="font-semibold text-[20px] font-generalSans mt-2 pe-8">
               Get Exclusive Updates From Us
             </h3>
 
-            <div className="flex w-full mt-6 rounded-full overflow-hidden bg-white max-w-md  ">
+            <div className="flex w-full mt-6 rounded-full overflow-hidden bg-white max-w-md">
               <input
                 type="email"
                 placeholder="Yourmail@example.com"
@@ -57,7 +65,7 @@ const Footer = () => {
                 <Link href="/service/web-dev">Web & App Development</Link>
               </li>
               <li>
-                <Link href="/service/it-service">IT Service</Link>
+                <Link href="/service/it-support">IT Service</Link>
               </li>
               <li>
                 <Link href="/service/ai-solution">3rd Party AI Solution</Link>
@@ -80,7 +88,10 @@ const Footer = () => {
                 </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection("about")} className="cursor-pointer">
+                <button
+                  onClick={() => scrollToSection("about")}
+                  className="cursor-pointer"
+                >
                   Our Team
                 </button>
               </li>
