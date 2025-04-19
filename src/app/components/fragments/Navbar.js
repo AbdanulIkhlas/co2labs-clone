@@ -80,7 +80,7 @@ const Navbar = () => {
                 <Link href="/service/web-dev">Website & App Development</Link>
               </li>
               <li className="list-disc ml-4 text-gray-900 underline font-medium font-generalSans ">
-                <Link href="/service/it-service">IT Support</Link>
+                <Link href="/service/it-support">IT Support</Link>
               </li>
               <li className="list-disc ml-4 text-gray-900 underline font-medium font-generalSans ">
                 <Link href="/service/ai-solution">3rd Party AI Solution</Link>
