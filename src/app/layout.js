@@ -5,16 +5,15 @@ import "./globals.css";
 import Navbar from "./components/fragments/Navbar";
 import Footer from "./components/fragments/Footer";
 
-
 export const generalSansFont = localFont({
-  src: "../app/fonts/GeneralSans-medium.woff2",
+  src: "../app/fonts/GeneralSans-Medium.woff2",
   variable: "--font-generalSans",
 });
 
 const orbitron = Orbitron({
   variable: "--font-orbitron",
   subsets: ["latin"],
-}); 
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
