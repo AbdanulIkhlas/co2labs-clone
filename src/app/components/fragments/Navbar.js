@@ -149,7 +149,7 @@ const Navbar = () => {
                   className="absolute top-full left-0 bg-white shadow-md text-gray-900 rounded-md overflow-hidden"
                 >
                   <ul className="w-198 py-1 pt-3 px-4 space-y-2 grid grid-cols-2 gap-2 ">
-                    <li className="p-1">
+                    <li className="p-1 hover:bg-gray-100 rounded-lg transition-all duration-150">
                       <Link href="/service/web-main" className="flex gap-4">
                         <Image
                           src="/svg/drop-web-main.svg"
@@ -168,7 +168,7 @@ const Navbar = () => {
                         </div>
                       </Link>
                     </li>
-                    <li className="p-1">
+                    <li className="p-1 hover:bg-gray-100 rounded-lg transition-all duration-150">
                       <Link href="/service/web-dev" className="flex gap-4">
                         <Image
                           src="/svg/drop-web-dev.svg"
@@ -188,7 +188,7 @@ const Navbar = () => {
                         </div>
                       </Link>
                     </li>
-                    <li className="p-1">
+                    <li className="p-1 hover:bg-gray-100 rounded-lg transition-all duration-150">
                       <Link href="/service/it-support" className="flex gap-4">
                         <Image
                           src="/svg/drop-it-support.svg"
@@ -208,7 +208,7 @@ const Navbar = () => {
                         </div>
                       </Link>
                     </li>
-                    <li className="p-1">
+                    <li className="p-1 hover:bg-gray-100 rounded-lg transition-all duration-150">
                       <Link href="/service/ai-solution" className="flex gap-4">
                         <Image
                           src="/svg/drop-ai-solution.svg"
