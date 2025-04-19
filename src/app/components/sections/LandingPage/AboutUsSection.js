@@ -32,18 +32,18 @@ const AboutUs = () => {
           </AnimateOnScroll>
         </div>
         <AnimateOnScroll direction="up" delay={0.4}>
-          <div className="lg:w-1/2 lg:p-6">
+          <div className="w-150 lg:p-6">
             <Image
               src="/img/about-img.png"
               width={300}
               height={300}
               alt="Backdrop"
-              className="rounded-xl md:w-full"
+              className="rounded-xl md:w-full xl:w- xl:mt-10"
             />
           </div>
         </AnimateOnScroll>
       </div>
-      <div id="about">
+      <div id="about" className="scroll-mt-20">
         <h1 className="font-orbitron font-bold text-5xl text-left mt-42 px-10 lg:ps-28">
           Our Team
         </h1>

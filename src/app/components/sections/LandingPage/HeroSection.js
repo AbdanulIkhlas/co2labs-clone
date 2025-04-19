@@ -24,7 +24,7 @@ const HeroSection = () => {
           </p>
         </AnimateOnScroll>
         <AnimateOnScroll direction="up" delay={0.5}>
-          <a href="#">
+          <a href="https://api.whatsapp.com/send/?phone=6581181595&text=Hi+Co2%2C+I+would+like+ask+about+your+services.&type=phone_number&app_absent=0" target="_blank">
             <ButtonCustom>Get a free consult</ButtonCustom>
           </a>
         </AnimateOnScroll>
