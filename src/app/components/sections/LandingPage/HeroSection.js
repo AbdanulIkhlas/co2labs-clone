@@ -1,5 +1,6 @@
 import HeroImage from "../../fragments/HeroImage";
 import ButtonCustom from "../../elements/ButtonCustom";
+import AnimateOnScroll from "../../fragments/AnimatedOnScroll";
 
 const HeroSection = () => {
   return (
@@ -8,19 +9,25 @@ const HeroSection = () => {
         <HeroImage srcHeroImg="/img/heroimg-landingpage.png" />
       </div>
       <div className="px-10 lg:w-[48%] lg:px-0 lg:ps-30 lg:pt-16 xl:pt-27 xl:ps-26">
-        <h1 className="font-orbitron font-bold text-3xl md:text-5xl">
-          Where Code Meets
-        </h1>
-        <h2 className="bg-secondary text-main font-orbitron font-bold mt-3 text-3xl w-max px-5 md:text-5xl md:mt-4">
-          Creativity
-        </h2>
-        <p className="font-generalSans mt-3 text-xl md:mt-5">
-          Harnessing the power of our Coding Collective to build solutions for
-          your business needs.
-        </p>
-        <a href="#">
-          <ButtonCustom>Get a free consult</ButtonCustom>
-        </a>
+        <AnimateOnScroll direction="left" delay={0.4}>
+          <h1 className="font-orbitron font-bold text-3xl md:text-5xl">
+            Where Code Meets
+          </h1>
+          <h2 className="bg-secondary text-main font-orbitron font-bold mt-3 text-3xl w-max px-5 md:text-5xl md:mt-4">
+            Creativity
+          </h2>
+        </AnimateOnScroll>
+        <AnimateOnScroll direction="left" delay={0.9}>
+          <p className="font-generalSans mt-3 text-xl md:mt-5">
+            Harnessing the power of our Coding Collective to build solutions for
+            your business needs.
+          </p>
+        </AnimateOnScroll>
+        <AnimateOnScroll direction="up" delay={0.5}>
+          <a href="#">
+            <ButtonCustom>Get a free consult</ButtonCustom>
+          </a>
+        </AnimateOnScroll>
       </div>
     </section>
   );
