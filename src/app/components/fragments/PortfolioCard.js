@@ -7,7 +7,7 @@ const PortfolioCard = ({ title, imageSrc, link }) => {
     <div className="group w-full max-w-sm mx-auto">
       <Link href={link}>
         <div className="overflow-hidden rounded-xl bg-white shadow-md -mt-4">
-          <div className="relative h-76 w-full overflow-hidden">
+          <div className="relative h-76 w-full overflow-hidden md:h-60 ">
             <Image
               src={imageSrc}
               alt={title}
