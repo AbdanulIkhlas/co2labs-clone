@@ -35,7 +35,6 @@ const Navbar = () => {
     return () => document.removeEventListener("mousedown", handleOutsideClick);
   }, [isSidebarOpen]);
 
-  // ➕ scroll listener for shadow
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -45,7 +44,6 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Scroll jika sudah di halaman "/" dan ada scrollToId
   useEffect(() => {
     const scrollToId = localStorage.getItem("scrollToId");
     if (pathname === "/" && scrollToId) {

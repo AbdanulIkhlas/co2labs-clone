@@ -15,7 +15,6 @@ const HeroImage = ({ srcHeroImg }) => {
 
   return (
     <div className="relative">
-      {/* Backdrop tetap duluan di bawah */}
       <div
         className="w-[230px] h-[268px] absolute top-0 right-0 z-10 md:w-[360px] md:h-[440px] md:top-18
         lg:top-0 lg:w-[400px] lg:h-[480px] xl:-top-1"
@@ -23,7 +22,6 @@ const HeroImage = ({ srcHeroImg }) => {
         <Image src="/img/backdrop.png" fill alt="Backdrop" />
       </div>
 
-      {/* Hero Image container */}
       <div
         ref={ref}
         className="w-[250px] h-[150px] absolute rounded-xl top-15 left-12 z-20 md:w-[390px] md:h-[235px] md:top-44 md:left-55

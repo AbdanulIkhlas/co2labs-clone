@@ -8,7 +8,6 @@ const ContactUsSection = () => {
         <h1 className="font-orbitron text-5xl font-bold leading-19">
           Contact Us
         </h1>
-        {/* Icon Section */}
         <div className="flex justify-center space-x-10 mt-10 text-3xl md:gap-10 md:mt-0">
           <a
             href="https://www.google.com/maps/place/Coding+Collective/@1.2752206,103.8001463,18z"
