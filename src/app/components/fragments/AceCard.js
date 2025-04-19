@@ -20,7 +20,7 @@ const AceCard = ({ title, secTitle, description, points, isEven }) => {
 
   return (
     <div
-      className={`transition-all duration-500 px-10 py-10 ${bgColor} flex flex-col justify-between`}
+      className={`transition-all duration-500 px-10 py-10 ${bgColor} flex flex-col justify-between mx-auto`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
@@ -28,7 +28,9 @@ const AceCard = ({ title, secTitle, description, points, isEven }) => {
         <h2 className="font-extrabold text-4xl text-left font-generalSans">
           {title}
         </h2>
-        <p className="text-xl font-medium mt-1 text-left font-generalSans">{secTitle}</p>
+        <p className="text-xl font-medium mt-1 text-left font-generalSans">
+          {secTitle}
+        </p>
 
         <div
           className="overflow-hidden transition-all duration-500 ease-in-out"
@@ -53,7 +55,7 @@ const AceCard = ({ title, secTitle, description, points, isEven }) => {
           width={60}
           height={40}
           className={`transition-transform duration-500 ${
-            hovered ? "rotate-180" : "rotate-0"
+            hovered ? "rotate-0" : "rotate-180"
           }`}
         />
       </div>
