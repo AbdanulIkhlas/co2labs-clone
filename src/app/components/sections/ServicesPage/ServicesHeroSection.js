@@ -1,6 +1,5 @@
-import TextHero from "../fragments/TextHero";
-import AnimateOnScroll from "../fragments/AnimatedOnScroll";
-import HeroImage from "../fragments/HeroImage";
+import TextHero from "../../fragments/TextHero";
+import HeroImage from "../../fragments/HeroImage";
 
 const ServicesHeroSection = ({urlImage, textTitle, textSubtitle}) => {
   return (

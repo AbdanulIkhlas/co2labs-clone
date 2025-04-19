@@ -1,4 +1,4 @@
-import ServicesHeroSection from "@/app/components/sections/ServicesHeroSection";
+import ServicesHeroSection from "@/app/components/sections/ServicesPage/ServicesHeroSection";
 
 export default function Page() {
   return (
